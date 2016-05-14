@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表格相关样式</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<style type="text/css">
+		.tbl1{
+			border:1px solid red;
+			margin:50px;
+			border-collapse: separate;
+			/*border-collapse: collapse;*/
+			border-spacing: 15px;
+			border-spacing:10px 30px;
+		}
+		.tbl1 td{
+			border:1px solid green;
+		}
+		.tbl2{
+			border:1px solid red;
+			/*border-collapse: collapse;*/
+			caption-side: bottom;
+			empty-cells: hide;
+		}
+		.tbl2 td{
+			border:1px solid pink;
+		}
+		.tbl3{
+			width: 400px;
+			border:1px solid red;
+			table-layout: fixed;
+		}
+		.tbl3 td{
+			border:1px solid blue;
+		}
+	</style>
+</head>
+<body>
+<table class="tbl1">
+	<tr>
+		<td>编号</td>
+		<td>用户名</td>
+		<td>年龄</td>
+		<td>邮箱</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>King</td>
+		<td>12</td>
+		<td>382771946@qq.com</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>tmooc</td>
+		<td>15</td>
+		<td>tmooc@tedu.cn</td>
+	</tr>
+</table>
+
+<table class="tbl2">
+	<caption>用户表</caption>
+    <thead>
+        <tr>
+            <td>编号</td>
+            <td>用户名</td>
+            <td>年龄</td>
+            <td>邮箱</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>King</td>
+            <td>12</td>
+            <td>382771946@qq.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>tmooc</td>
+            <td>15</td>
+            <td>tmooc@tedu.cn</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>xxx</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4">总共3个人</td>
+        </tr>
+    </tfoot>
+</table>
+
+<table class="tbl3">
+	<tr>
+		<td width='50'>123456789</td>
+		<td>111222333444555</td>
+	</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>遮罩层</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<style type="text/css">
+		.dialog{
+			position:fixed;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			background-color: #000;
+			opacity: .7;
+			filter:alpha(opacity=70);
+		}
+		.dialog span{
+			display:block;
+			width:200px;
+			height:200px;
+			background-color: #fff;
+			position: absolute;
+			top:50%;
+			left:50%;
+
+		}
+		#test{
+			height:2000px;
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+<div class="dialog">
+	<span>hello king</span>
+</div>
+<div id="test">this is atest</div>
+
+</body>
+</html>

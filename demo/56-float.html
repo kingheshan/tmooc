@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<style type="text/css">
+		#container{
+			width:900px;
+			margin:0 auto;
+			height:300px;
+			border:5px solid black;
+		}
+		#box1,#box2,#box3{
+			width: 300px;
+			height: 300px;
+		}
+		#box1{
+			background-color: pink;
+		}
+		#box2{
+			background-color: green;
+		}
+		#box3{
+			background-color: #abcdef;
+		}
+		/*出现123的顺序*/
+		/*出现231的顺序*/
+		/*出现321*/
+		/*出现132*/
+		#box1{
+			/*float:left;*/
+			float:left;
+			/*margin-left:300px;*/
+		}
+		#box2{
+			float: right;
+			/*margin-left:-600px;*/
+		}
+		#box3{
+			float:left;
+		}
+		/*312的顺序*/
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="box1">box1</div>
+		<div id="box2">box2</div>
+		<div id="box3">box3</div>
+	</div>
+</body>
+</html>

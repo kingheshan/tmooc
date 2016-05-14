@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清除浮动的例子</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<style type="text/css">
+		#container{
+			width:960px;
+			margin:0 auto;
+			border:5px solid red;
+			/*height: 500px;*/
+		}
+		#box1,#box2,#box3{
+			width: 300px;
+			height: 300px;
+		}
+		#box1{
+			background-color: pink;
+			float: left;
+		}
+		#box2{
+			background-color: blue;
+			/*clear:both;*/
+			float:left;
+		}
+		#box3{
+			background-color: green;
+			float:left;
+		}
+		/*解决父元素高度清空为0的问题*/
+		/*.clearfix{*/
+			/*overflow:hidden; *//*设置内容超出之后如何显示，hidden隐藏*/
+			/*zoom:1;*/ /*IE专有属性*/
+		/*}*/
+		/*空元素的方式*/
+		/*.clearfix{
+			clear:both;
+		}*/
+		.clearfix:after{
+			content:'king';
+			display:block;
+			clear:both;
+			visibility: hidden;
+			height:0;
+			font-size:0;
+			line-height: 0;
+		}
+	</style>
+</head>
+<body>
+<div id="container"  class="clearfix">
+	<div id="box1">box1</div>
+	<div id="box2">box2</div>
+	<div id="box3">box3</div>
+	<!-- <div class='clearfix'></div> -->
+</div>
+
+</body>
+</html>

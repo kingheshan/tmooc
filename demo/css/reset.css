@@ -1,0 +1,65 @@
+/*
+YUI 3.18.1 (build f7e7bcb)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+html {
+    color: #000;
+    background: #FFF
+}
+/*去掉元素的内外边距*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0
+}
+/*去掉元素获得焦点时的轮廓*/
+input:focus{
+	outline:none;
+}
+/*解决父元素高度清空为0的问题*/
+.clearfix{
+	overflow:hidden;
+	zoom:1;
+}
+a{
+	text-decoration: none;
+}
+ul,ol,li{
+	list-style:none;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div em{
+			color:red;
+		}
+		h1 span em{
+			color:blue;
+		}
+		#test1 .test2{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+<h1>父类选择器，至少为父子关系</h1>
+<div>
+	<p>hello world</p>
+	<em>我是div的儿子</em>
+</div>
+<div>
+	<p>Hello <em>king</em></p>
+	<p><em>我是div的孙子</em></p>
+</div>
+<h1>
+	<span>
+		<em>我是h1的孙子</em>
+	</span>
+</h1>
+
+<div id="test1">
+	<p class="test2">this is a test</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

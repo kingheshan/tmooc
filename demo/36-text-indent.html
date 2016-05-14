@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文本缩进</title>
+	<style type="text/css">
+		body{
+			width:500px;
+		}
+		p{
+			border:1px solid red;
+		}
+		.test1{
+			text-indent: -30px;
+		}
+		.test2{
+			text-indent: 30%;
+		}
+		.test3{
+			text-indent: 150px;
+		}
+		.test4{
+			text-indent:-9999px;
+		}
+		.test4:hover{
+			text-indent: 0;
+		}
+		.test4:active{
+			text-indent: 5px;
+		}
+		.test5{
+			width:200px;
+			text-indent: 30px;
+		}
+	</style>
+</head>
+<body>
+<h1>通过text-indent设置文本缩进</h1>
+<p>没有缩进</p>
+<p class="test1">30px的缩进</p>
+<p class="test2">30%的缩进</p>
+<p class="test3">150px缩进</p>
+<p class="test4">King是讲师界的高富帅哈！！！</p>
+<p class="test5">text-indent只对于块元素的第一行内容起作用，text-indent只对于块元素的第一行内容起作用text-indent只对于块元素的第一行内容起作用</p>
+
+</body>
+</html>

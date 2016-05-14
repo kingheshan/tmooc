@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.test1:first-line{
+		color:pink;
+	}
+	.test1:first-letter{
+		font-size:40px;
+		font-style:italic;
+	}
+	.test2 p:before{
+		content:"~";
+	}
+	.test2 p:after{
+		content:"!";
+	}
+	.test3 p:before,.test3 p:after{
+		content:url("images/king.jpg");
+	}
+	.test4 li:before{
+		content:url("images/play.png");
+	}
+	/*attr(name)根据属性名称得到指定的属性值*/
+	.test5 li a:after{
+		content:"("attr(href)")--"attr(title)"~~~";
+	}
+	</style>
+</head>
+<body>
+	<div class="test1">
+		<h1>King is a Smart Boy</h1>
+		<p>Hello King,Welcome to Study Css</p>
+	</div>
+	<div class="test2">
+		<p>hello world</p>
+	</div>
+	<div class="test3">
+		<p>hello King</p>
+	</div>
+	<div class="test4">
+		<ul>
+			<li>奥莉当姐姐啦！李小鹏妻子今早生下二胎</li>
+			<li>奥莉当姐姐啦！李小鹏妻子今早生下二胎</li>
+			<li>奥莉当姐姐啦！李小鹏妻子今早生下二胎</li>
+			<li>奥莉当姐姐啦！李小鹏妻子今早生下二胎</li>
+		</ul>
+	</div>
+	<div class="test5">
+		<ul>
+			<li><a href="http://www.chuanke.com/s5189664.html" title="最大IT在线教育平台">传课</a></li>
+			<li><a href="http://tmooc.cn" title="最大的IT人才输送机构">达内科技</a></li>
+			<li><a href="http://phpfamily.org" title="自己找亮点~">King的博客</a></li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文本内空格处理方式</title>
+	<style type="text/css">
+		p{
+			width:200px;
+			border:1px solid red;
+		}
+		.test1{
+			white-space: normal;
+		}
+		.test2{
+			white-space: pre;
+		}
+		.test3{
+			white-space: nowrap;
+		}
+		.live li{
+			border:1px solid blue;
+			width: 200px;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+<p class="test1">通过white-space                    设置对象内空格的处理方式，          white-space:normal,                  这是默认值</p>
+<p class="test2">white-space:pre,用等宽字体显示预先定义好的文本           white-space:                   pre,用等宽字体显示预先定义好的文本</p>
+<p class="test3">white-space:no-wrap,用等宽字体显示预先定义好的文本           white-space:                   pre,用等宽字体显示预先定义好的文本</p>
+<ul class='live'>
+	<li><a href="#">13:35吉林农安县合隆镇        八家子小学二年级美术1</a></li>
+	<li><a href="#">13:35吉林农安县合隆镇八家       子小学二年级美术2</a></li>
+	<li><a href="#">13:35吉林农安县合隆镇八家子小学二年级美术3</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

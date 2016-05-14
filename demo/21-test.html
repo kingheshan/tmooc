@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	/*100+100=200*/
+	#box1 #p1{
+		color:green;
+	}
+	/*100+10=101*/
+	#box1 .t1{
+		color:blue;
+	}
+	#box1 p{/*101*/
+		color:red;
+	}
+	#box2>.test3>li{
+		color:#ABCDEF;
+	}
+	div>.test3>li{
+		color:pink;
+	}
+	/*100+1+1=102*/
+	#box2 ul li{
+		color:blue;
+	}
+	</style>
+</head>
+<body>
+<div id="box1" class='test1'>
+	<p id='p1' class='t1'>this is a test</p>
+</div>
+<div id="box2">
+	<ul class='test3'>
+		<li>a1</li>
+		<li>a2</li>
+		<li>a3</li>
+	</ul>
+</div>
+
+
+</body>
+</html>

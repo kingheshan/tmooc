@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*id选择器权重为100*/
+		#test1{
+			color:pink;
+		}
+	/*类选择器10*/
+		.test2{
+			color:green;
+		}
+		p{
+			color:red;
+		}
+		p{
+			color:blue !important;
+		}
+		#test3{
+			color:red !important;
+		}
+		#test3{
+			color:green !important;
+		}
+
+	</style>
+</head>
+<body>
+<h1>优先级的例子</h1>
+<p id='test1' class='test2' style="color:gray;">this is a test</p>
+<h2 id='test3'>this is a test1</h2>
+
+</body>
+</html>

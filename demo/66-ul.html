@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ul浮动</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<style type="text/css">
+		body{
+			font:12px/1.5 arial;
+		}
+		#container{
+			width:960px;
+			border:2px solid black;
+			margin:0 auto;
+		}
+		ul,ol,li{
+			list-style:none;
+		}
+		a{
+			text-decoration: none;
+		}
+		.test1{
+			float:left;
+			/*border:1px solid red;*/
+			width:600px;
+
+		}
+		.test1 li{
+			/*border:1px solid blue;*/
+			float:left;
+		}
+		.test1 li a{
+			width:100px;
+			height:30px;
+			display:block;
+			text-align:center;
+			line-height: 30px;
+		}
+		.test1 li a:link,.test1 li a:visited{
+			color:gray;
+		}
+		.test1 li a:hover,.test1 li a:active{
+			color:black;
+		}
+		.menu dd{
+			/*border:1px solid pink;*/
+			border-top:1px solid pink;
+			display: none;
+		}
+		.menu:hover dd{
+			display:block;
+		}
+		.menu:hover{
+			border:1px solid pink;
+		}
+	</style>
+</head>
+<body>
+<div id="container" class='clearfix'>
+	<ul class='test1'>
+		<li><a href="#">首页1</a></li>
+		<li><a href="#">首页2</a></li>
+		<li class='menu'>
+			<dl>
+				<dt><a href="#">首页3</a></dt>
+				<dd><a href="#">衣服1</a></dd>
+				<dd><a href="#">衣服2</a></dd>
+				<dd><a href="#">衣服3</a></dd>
+				<dd><a href="#">衣服4</a></dd>
+			</dl>
+		</li>
+		<li><a href="#">首页4</a></li>
+		<li><a href="#">首页5</a></li>
+	</ul>
+</div>
+
+</body>
+</html>

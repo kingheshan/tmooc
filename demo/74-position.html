@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定位</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<style type="text/css">
+		#box1,#box2,#box3{
+			width: 100px;
+			height: 100px;
+		}
+		#box1{
+			background-color: red;
+			position:static;
+			top:0;
+			left:0;
+		}
+		#box2{
+			background-color: green;
+			position:relative;
+			top:50px;
+			left:50px;
+			z-index:10;
+		}
+		#box3{
+			background-color: blue;
+			position:relative;
+			left:-50px;
+			bottom:50px;
+			z-index:0;
+		}
+	</style>
+
+</head>
+<body>
+<div id="box1">box1</div>
+<div id="box2">box2</div>
+<div id="box3">box3</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

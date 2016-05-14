@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.test1 p a[class]{
+		color:red;
+	}
+	.test1 p img[title]{
+		border:5px solid pink;
+	}
+	.test2 a[href="http://phpfamily.org"]{
+		color:red;
+		font-size:30px;
+	}
+	.test3 p[class~="a"]{
+		color:green;
+	}
+	.test4 p[class|="v"]{
+		color:red;
+	}
+	</style>
+</head>
+<body>
+<h1>属性选择器，[attr]</h1>
+<div class="test1">
+	<p><a href="#" class='first'>首页1</a></p>
+	<p><a href="#">首页2</a></p>
+	<p><a href="#">首页3</a></p>
+	<p><img src="images/king.jpg" alt="hello king" title="hello king"></p>
+	<p><img src="images/king.jpg" alt="" ></p>
+</div>
+<h1>属性名称=属性值[attr=value]</h1>
+<div class="test2">
+	<p><a href="http://phpfamily.org">King的博客</a></p>
+	<p><a href="https://www.baidu.com">百度一下</a></p>
+</div>
+<div class="test3">
+	<p class="a">p1</p>
+	<p class="b">p2</p>
+	<p class="a b">p3</p>
+	<p class='alink'>p4</p>
+</div>
+<h1>属性值包含val而且以它开始，包含这个值本身也可以</h1>
+<div class="test4">
+	<p class="v">test1</p>
+	<p class="v-">test2</p>
+	<p class="vv">test3</p>
+	<p class="v-1">test4</p>
+	<p class="v-abc">test5</p>
+	<p class="k-v">test6</p>
+
+</div>
+</body>
+</html>
