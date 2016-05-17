@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>通过边框实现banner标签</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<style type="text/css">
+		.tagBanner{
+			/*border:1px solid red;*/
+			position:relative;
+			top:0;
+			left:0;
+			margin:50px;
+		}
+		.tagBanner:before{
+			content:'Mk.King';
+			/*border:1px solid blue;*/
+			position:absolute;
+			top:8px;
+			left:-10px;
+			z-index:1;
+			color:#fff;
+			font-weight: 700;
+			height: 0;
+			line-height: 0;
+			/*width: 0;*/
+			height: 0;
+			border:20px solid #abcdef;
+			border-right-color:transparent;
+			padding-right:15px;
+		}
+		.tagBanner:after{
+			content:"";
+			position:absolute;
+			top:48px;
+			left:-10px;
+			border:5px solid #4879bd;
+			border-left-color: transparent;
+			border-bottom-color: transparent;
+		}
+	</style>
+
+</head>
+<body>
+<div class="tagBanner">
+	<img src="images/king.jpg" alt="">
+</div>
+</body>
+</html>
